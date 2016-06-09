@@ -1,0 +1,8 @@
+{  
+  "name": "Pepi Push",  
+  "short_name": "pepi push",  
+  "start_url": "/",  
+  "display": "standalone",  
+  "gcm_sender_id": "707621176504",  
+  "gcm_user_visible_only": true  
+}
