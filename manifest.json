@@ -1,6 +1,6 @@
 {  
-  "name": "Pepi Push",  
-  "short_name": "pepi push",  
+  "name": "DKC Central",  
+  "short_name": "dkc-central",  
   "start_url": "/",  
   "display": "standalone",  
   "gcm_sender_id": "707621176504",  
