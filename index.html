@@ -2,10 +2,6 @@
 <head>
 <title>mobiForge Web Push Notifications Example</title>
 <link rel="manifest" href="manifest.json">
-</head>
-<div id="not-status"></div>
-
-
 <script type="text/javascript">
 
 //Track state of push permission
@@ -194,12 +190,11 @@ function cancelSub(pushSubscription) {
   #pushStatusMsg {margin-left:30px;}
   #pushStatus {width: 30px;height: 30px;vertical-align: middle;}
 </style>
-<div id="not-status">
-	<h4>mobiForge notifications</h4>
-	<input id="pushStatus" type="checkbox" value="false" name="pushStatus">
-	<label for="pushStatus">Receive push notifications for new content</label>
-	<div id="pushStatusMsg">
-		<span style="color:#a00;font-weight:bold">You are not subscribed!</span>
-	</div>
-</div>
+</head>
+<body>
+<div id="not-status"></div>
+
+
+
+</body>
 </html>
