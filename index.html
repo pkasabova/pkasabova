@@ -11,7 +11,7 @@ var sw_support=false;
 window.onload = function() {
   
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('https://pkasabova.github.io/pkasabova/sw.js').then(function(registration) {
+    navigator.serviceWorker.register('https://pkasabova.github.io/pkasabova/sw.js').then(function(registration) { 
       // Registration was successful
       console.log('ServiceWorker registration successful with scope: ',    registration.scope);
 
