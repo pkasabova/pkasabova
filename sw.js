@@ -43,26 +43,19 @@ self.addEventListener('push', function(event) {
         });
 
         if(Notification.permission=='granted') {
-			return new Notification(notificationData.data.title, {
-				body: notificationData.data.body
-			  });	
-         /* return self.registration.showNotification(notificationData.data.title, {
+          return self.registration.showNotification(notificationData.data.title, {
             body: notificationData.data.body,
             icon: 'mf_logo.png'
-          });*/
+          });
 
         }
         else {
           Notification.requestPermission(function(permission) {
             if(permission=='granted') {
-				/*
               return self.registration.showNotification(notificationData.data.title, {
                 body: notificationData.data.body,
                 icon: 'mf_logo.png'
-              });*/
-			  return new Notification(notificationData.data.title, {
-				body: notificationData.data.body
-			  });
+              });
             }
           });
         }
