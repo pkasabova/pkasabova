@@ -130,7 +130,7 @@ function checkSubscription() {
     serviceWorkerRegistration.pushManager.getSubscription().then(
       function(pushSubscription) {
         if(!!pushSubscription) {
-          console.log(pushSubscription);
+          console.log(pushSubscription.endpoint);
           pushStatus = true;
           document.getElementById("pushStatus").checked = true;
           document.getElementById("pushStatusMsg").innerHTML = '<span style="color:#0a0;font-weight:bold">You are subscribed!</span>';
