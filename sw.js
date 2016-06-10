@@ -12,7 +12,7 @@ self.addEventListener('push', function(event) {
     method: 'GET',
     headers: httpHeaders,
   };
-
+ 
   //We wait for data fetch and notification promises
   event.waitUntil(
     fetch("https://pkasabova.github.io/pkasabova/latest.json", fetchInit).then(function(res) {
