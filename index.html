@@ -170,7 +170,9 @@ function disableNotifications() {
 
 function cancelSub(pushSubscription) {
   const endPoint = pushSubscription.endpoint.slice(pushSubscription.endpoint.lastIndexOf('/')+1);
- /* fetch("http://proba.6am.bg/push/subscribe.php?sid="+endPoint+"&act=unsub").then(function(res) {
+ // fetch("http://proba.6am.bg/push/subscribe.php?sid="+endPoint+"&act=unsub").then(function(res) {
+ fetch("https://pkasabova.github.io/pkasabova/latest.json").then(function(res) {
+ 
     res.json().then(function(data) {
           // Show notification
       console.log(data);
@@ -180,7 +182,7 @@ function cancelSub(pushSubscription) {
           //tag: data.tag
         //})
     })
-  })*/ 
+  })
 }
 
 </script>
