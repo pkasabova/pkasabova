@@ -109,6 +109,7 @@ console.log(pushSubscription);
 //get endpoint
 const endPoint = pushSubscription.endpoint.slice(pushSubscription.endpoint.lastIndexOf('/')+1);
 console.log(endPoint);
+alert(endPoint);
   //fetch("https://mobiforge.com/push/subscribe.php?sid=yyy"+pushSubscription.endpoint+"&act=sub").then(function(res) {
  //fetch("http://proba.6am.bg/push/subscribe.php?sid="+endPoint+"&act=sub").then(function(res) {
  fetch("https://pkasabova.github.io/pkasabova/latest.json").then(function(res) {
