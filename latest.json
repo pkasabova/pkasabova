@@ -1,3 +1,1 @@
-"data": {
-      "message": "This is a GCM Topic Message!",
-     }
+{"data":{"title":"New test msg","body":"Test message","icon":"icon","tag":"tag","url":"http://6am.bg"}}
