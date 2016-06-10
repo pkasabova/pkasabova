@@ -115,10 +115,11 @@ console.log(endPoint);
     res.json().then(function(data) {
           // Show notification
       console.log(data);
-          self.registration.showNotification(data.title, {
-          body: data.body,
-          icon: data.icon
-        })
+          //self.registration.showNotification(data.title, {
+          //body: data.body,
+          //icon: data.icon,
+          //tag: data.tag
+        //})
     }).catch(function(e) {
         console.error('Error sending subscription to server:', e);
       }); 
