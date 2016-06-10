@@ -110,7 +110,8 @@ console.log(pushSubscription);
 const endPoint = pushSubscription.endpoint.slice(pushSubscription.endpoint.lastIndexOf('/')+1);
 console.log(endPoint);
   //fetch("https://mobiforge.com/push/subscribe.php?sid=yyy"+pushSubscription.endpoint+"&act=sub").then(function(res) {
- /*fetch("http://proba.6am.bg/push/subscribe.php?sid="+endPoint+"&act=sub").then(function(res) {
+ //fetch("http://proba.6am.bg/push/subscribe.php?sid="+endPoint+"&act=sub").then(function(res) {
+ fetch("https://pkasabova.github.io/pkasabova/res.json").then(function(res) {
     res.json().then(function(data) {
           // Show notification
       console.log(data);
@@ -122,7 +123,7 @@ console.log(endPoint);
     }).catch(function(e) {
         console.error('Error sending subscription to server:', e);
       }); 
-  })*/
+  })
 }
 
 function checkSubscription() {
