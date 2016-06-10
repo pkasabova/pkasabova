@@ -43,6 +43,7 @@ self.addEventListener('push', function(event) {
         });
 
         if(Notification.permission=='granted') {
+			 console.log(notificationData.data.title);
           return self.registration.showNotification(notificationData.data.title, {
             body: notificationData.data.body,
             icon: 'mf_logo.png'
@@ -52,6 +53,7 @@ self.addEventListener('push', function(event) {
         else {
           Notification.requestPermission(function(permission) {
             if(permission=='granted') {
+				 console.log(notificationData.data.title);
               return self.registration.showNotification(notificationData.data.title, {
                 body: notificationData.data.body,
                 icon: 'mf_logo.png'
