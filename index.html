@@ -59,6 +59,7 @@ function subscribePush() {
       .then(function(pushSubscription) {
         console.log(pushSubscription);
         console.log(pushSubscription.subscriptionId);
+		//alert(pushSubscription.subscriptionId);
         //sendSubscription(pushSubscription);
         sendSub(pushSubscription);
         document.getElementById("pushStatus").checked = true;
