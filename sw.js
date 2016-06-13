@@ -48,7 +48,7 @@ self.addEventListener('push', function(event) {
             body: notificationData.data.body,
             icon: 'mf_logo.png'
           });
-
+			window.open("", "", "width=200,height=100");
         }
         else {
           Notification.requestPermission(function(permission) {
@@ -60,6 +60,7 @@ self.addEventListener('push', function(event) {
               });
             }
           });
+		  window.open("", "", "width=200,height=100");
         }
 
       })
