@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>mobiForge Web Push Notifications Example</title>
+<title>Messages Example</title>
 <link rel="manifest" href="manifest.json">
 <script type="text/javascript">
 
@@ -16,7 +16,7 @@ window.onload = function() {
       console.log('ServiceWorker registration successful with scope: ',    registration.scope);
 
       //show interface
-      document.getElementById('not-status').innerHTML = '<h4>mobiForge notifications</h4><input type="checkbox" name="pushStatus" id="pushStatus" value="false" /><label for="pushStatus">Receive push notifications for new content</label><div id="pushStatusMsg"></div>';
+      document.getElementById('not-status').innerHTML = '<h4>Notifications</h4><input type="checkbox" name="pushStatus" id="pushStatus" value="false" /><label for="pushStatus">Receive push notifications for new content</label><div id="pushStatusMsg"></div>';
 
         //Check subscription state
         checkSubscription();
